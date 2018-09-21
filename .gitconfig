@@ -1,0 +1,18 @@
+[color]
+	ui = auto
+[user]
+	name = hongbo.ghb
+	email = hongbo.ghb@alibaba-inc.com
+[ssh]
+	variant = ssh
+[commit]
+      template = /home/hongbo.ghb/.git_template/commit_template
+[alias]
+	ph=push yunos HEAD:refs/for/codebase_host
+	p6763=push yunos HEAD:refs/for/dev_host_ivi_mtk6763    
+    p8225=push yunos HEAD:refs/for/dev_ivi_ac8225
+    lg="log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    st=status
+    co=checkout
+    br=branch
+    ci=commit

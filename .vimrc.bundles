@@ -1,0 +1,59 @@
+if &compatible
+    echo "!!!!!!!!!!!!!!!!!!!!!!!"
+    set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"使用Vundle来管理Vundle
+Bundle 'gmarik/vundle'
+":BundleList - list configured bundles  
+":BundleInstall(!) - install(update) bundles  
+":BundleSearch(!) foo - search(or refresh cache first) for foo  
+":BundleClean(!) - 删除插件首先要在.vimrc中注释掉插件相应的行，再运行该命令
+
+Bundle 'danro/rename.vim'
+Bundle 'pbrisbin/vim-mkdir'
+" Bundle 'vim-scripts/matchit.zip'
+Bundle 'godlygeek/tabular'
+Bundle 'msanders/snipmate.vim'
+"自动补全
+" Bundle 'Valloric/YouCompleteMe'
+" Bundle 'christoomey/vim-run-interactive'
+Bundle 'Lokaltog/vim-easymotion'
+" xor Vundle
+Plugin 'unblevable/quick-scope'
+Bundle 'EasyGrep'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'taglist.vim'
+Bundle 'majutsushi/tagbar'
+" Bundle 'SuperTab'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'scrooloose/nerdcommenter'
+" Bundle 'tmhedberg/SimpylFold'
+Bundle 'jiangmiao/auto-pairs'
+" Bundle 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'scrooloose/nerdtree'
+Bundle 'terryma/vim-expand-region'
+"bookmark
+Plugin 'MattesGroeger/vim-bookmarks'
+" Plugin 'kien/rainbow parentheses.vim'
+"快速移动
+" Plugin 'haya14busa/incsearch.vim'
+" Plugin 'haya14busa/incsearch-fuzzy.vim'
+"高亮选择的内容
+Plugin 'kana/vim-operator-user'
+Plugin 'haya14busa/vim-operator-flashy'
+Plugin 'flazz/vim-colorschemes'
+"ctrl-space插件
+" Plugin 'vim-ctrlspace/vim-ctrlspace'
+Plugin 'rking/ag.vim'
+"通过标记和高亮显示本文件的变更点
+Plugin 'airblade/vim-gitgutter'
+filetype on
+
+

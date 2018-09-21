@@ -1,0 +1,6 @@
+BugID:16950735:add atc-surface for ac8225 product
+
+Root Cause:using openmax header file located in vendor folder
+Solution:using openmax header file located in vendor folder
+
+Test Suggestion:cowplayer-test -a /data/file
