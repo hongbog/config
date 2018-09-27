@@ -16,7 +16,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'danro/rename.vim'
 Bundle 'pbrisbin/vim-mkdir'
-" Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/matchit.zip'
 Bundle 'godlygeek/tabular'
 Bundle 'msanders/snipmate.vim'
 "自动补全
@@ -54,6 +54,12 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim'
 "通过标记和高亮显示本文件的变更点
 Plugin 'airblade/vim-gitgutter'
+" 括号匹配高亮
+Bundle 'kien/rainbow_parentheses.vim'
+" 缩进可视化
+Bundle 'nathanaelkane/vim-indent-guides'
+"  自动补全
+Bundle 'Valloric/YouCompleteMe'
 filetype on
 
 
