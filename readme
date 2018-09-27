@@ -1,0 +1,23 @@
+1: 通过bundle插件来安装vim 所需插件
+git clone https://github.com/gmarik/Vundle.vim.git
+2： 在.vimrc中配置好bundle的路径，注意bundle目录的路径要跟.vimrc中配置的要一致；
+3：在.vimrc.bundle中设置好要安装的插件，输入:BundleInstall开始安装插件
+
+当然有几个插件的安装比较复杂
+1：Ag插件的安装
+ag速度要快不少，安装方法如下：
+apt-get install silversearcher-ag
+let g:ackprg = 'ag --vimgrep'
+
+ag插件使用方式：
+
+2：completeme插件的安装
+youcomplete
+Plugin 'Valloric/YouCompleteMe’ 记得要更新才行，
+
+安装clang，支持c和c++的补全
+pt-get install llvm-3.9 clang-3.9 libclang-3.9-dev libboost-all-dev
+mkdir ~/.ycm_build
+cd ~/.ycm_build
+cmake -G "Unix Makefiles" -DUSE_SYSTEM_BOOST=ON -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+这个操作下来还是有点问题。后面直接参考README，里面有install.py。执行这个文件，完成安装youcomplete
